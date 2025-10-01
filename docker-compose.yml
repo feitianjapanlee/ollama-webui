@@ -9,6 +9,7 @@ services:
         reservations:
           devices:
             - capabilities: [gpu]
+    restart: always
     volumes:
       - ./ollama/.ollama:/root/.ollama
   open-webui:
